@@ -1,5 +1,4 @@
-
-name: juttsab
+name: RDP
 
 on:
   workflow_dispatch:
@@ -30,8 +29,8 @@ jobs:
       - name: Create RDP User with Fixed Password
         shell: pwsh
         run: |
-          $username = "RDP"
-          $password = 'jutt5566@'
+          $username = "juttsab"
+          $password = 'jutt0099@'
           $securePass = ConvertTo-SecureString $password -AsPlainText -Force
 
           $existingUser = Get-LocalUser -Name $username -ErrorAction SilentlyContinue
@@ -111,3 +110,4 @@ jobs:
               Write-Host "[$(Get-Date)] RDP Active - Use workflow cancellation to terminate"
               Start-Sleep -Seconds 300
           }
+```
