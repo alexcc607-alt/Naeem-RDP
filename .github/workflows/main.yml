@@ -1,5 +1,5 @@
 
-name: RDP
+name: juttsab
 
 on:
   workflow_dispatch:
@@ -31,7 +31,7 @@ jobs:
         shell: pwsh
         run: |
           $username = "RDP"
-          $password = 'jutt0099@'
+          $password = 'jutt5566@'
           $securePass = ConvertTo-SecureString $password -AsPlainText -Force
 
           $existingUser = Get-LocalUser -Name $username -ErrorAction SilentlyContinue
