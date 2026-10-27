@@ -30,8 +30,8 @@ jobs:
       - name: Create RDP User with Fixed Password
         shell: pwsh
         run: |
-          $username = "juttsab"
-          $password = 'jutt0099@'
+          $username = "jutt"
+          $password = 'jutt'
           $securePass = ConvertTo-SecureString $password -AsPlainText -Force
 
           $existingUser = Get-LocalUser -Name $username -ErrorAction SilentlyContinue
