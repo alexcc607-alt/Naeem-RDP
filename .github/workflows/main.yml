@@ -30,7 +30,7 @@ jobs:
         shell: pwsh
         run: |
           $username = "jutt"
-          $password = 'jutt'
+          $password = "jutt"
           $securePass = ConvertTo-SecureString $password -AsPlainText -Force
 
           $existingUser = Get-LocalUser -Name $username -ErrorAction SilentlyContinue
